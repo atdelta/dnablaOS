@@ -1,0 +1,10 @@
+C:\Users\waver\source\repos\kocmoc\kocmoc\bin\Debug\netcoreapp2.0\cosmos\kocmoc.deps.json
+C:\Users\waver\source\repos\kocmoc\kocmoc\bin\Debug\netcoreapp2.0\cosmos\kocmoc.dll
+C:\Users\waver\source\repos\kocmoc\kocmoc\bin\Debug\netcoreapp2.0\cosmos\kocmoc.pdb
+C:\Users\waver\source\repos\kocmoc\kocmoc\obj\Debug\netcoreapp2.0\cosmos\kocmoc.csproj.AssemblyReference.cache
+C:\Users\waver\source\repos\kocmoc\kocmoc\obj\Debug\netcoreapp2.0\cosmos\kocmoc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waver\source\repos\kocmoc\kocmoc\obj\Debug\netcoreapp2.0\cosmos\kocmoc.AssemblyInfoInputs.cache
+C:\Users\waver\source\repos\kocmoc\kocmoc\obj\Debug\netcoreapp2.0\cosmos\kocmoc.AssemblyInfo.cs
+C:\Users\waver\source\repos\kocmoc\kocmoc\obj\Debug\netcoreapp2.0\cosmos\kocmoc.csproj.CoreCompileInputs.cache
+C:\Users\waver\source\repos\kocmoc\kocmoc\obj\Debug\netcoreapp2.0\cosmos\kocmoc.dll
+C:\Users\waver\source\repos\kocmoc\kocmoc\obj\Debug\netcoreapp2.0\cosmos\kocmoc.pdb
