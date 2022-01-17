@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading;
-using System.Drawing;
-using Figgle;
+using System.IO;
+using kocmoc.ErrorHandle;
+using kocmoc.Programs;
 using Sys = Cosmos.System;
 
 namespace kocmoc
@@ -13,24 +13,21 @@ namespace kocmoc
         string UserName = "Default";
         Sys.FileSystem.CosmosVFS fs;
         string current_directory = "0:\\";
+        string whdx = String.Empty;
 
         protected override void BeforeRun()
         {
             Sys.FileSystem.CosmosVFS fs;
             string current_directory = "0:\\";
-            Console.WriteLine("      ::::::::: :::    :::  :::   :::  :::::::::     :::     ::::::::  ::::::::  ::::::::  ::::::::");
-            Console.WriteLine("     :+:    :+::+:    :+: :+:+: :+:+: :+:    :+:  :+: :+:  :+:    :+::+:    :+::+:    :+::+:    :+:");
-            Console.WriteLine("    +:+    +:++:+    +:++:+ +:+:+ +:++:+ +:+    +:+  +:+  +:+     :+        +:+       +:++:+");
-            Console.WriteLine("   +#+    +:++#+    +:++#+  +:+  +#++#++:++#+ +#++:++#++:+#++:++#+++#++:++#+++#+    +:++#++:++#++");
-            Console.WriteLine("  +#+    +#++#+    +#++#+       +#++#+    +#++#+     +#+       +#+       +#++#+    +#+       +#+");
-            Console.WriteLine(" #+#    #+##+#    #+##+#       #+##+#    #+##+#     #+##+#    #+##+#    #+##+#    #+##+#    #+#");
-            Console.WriteLine("#########  ######## ###       ############ ###     ### ########  ########  ########  ########");
+            Console.WriteLine("DUMBASSOS");
 
 
         }
 
         protected override void Run()
         {
+            string[] dirs = GetDirFadr(current_directory);
+
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write(UserName);
             Console.ForegroundColor = ConsoleColor.DarkRed;
@@ -56,6 +53,33 @@ namespace kocmoc
                 Console.WriteLine("Codename: CTEPBA (idkwhylol)");
                 Console.WriteLine("User: {0}", UserName);
             }
+            else if (input == "ls")
+            {
+                foreach (var item in dirs)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            else if (input == "help")
+            {
+                Console.WriteLine("-=Help=-");
+                Console.WriteLine("help - outputs this message");
+                Console.WriteLine("echo [text] - shows your text after command");
+                Console.WriteLine("cun - Change UserName");
+                Console.WriteLine("sysver - about system");
+                Console.WriteLine("utils - small dev utils");
+            }
+        }
+
+        public static void VariableAdd(string comusa, string whatdoes)
+        {
+            Console.WriteLine(comusa + " - " + whatdoes);
+        } 
+
+        private string[] GetDirFadr(string adr) // Get Directories From Address
+        {
+            var dirs = Directory.GetDirectories(adr);
+            return dirs;
         }
     }
 }

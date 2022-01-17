@@ -5,10 +5,10 @@
   },
   "projects": {
     "C:\\Users\\waver\\source\\repos\\kocmoc\\kocmoc\\kocmoc.csproj": {
-      "version": "1.0.0",
+      "version": "0.1.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\waver\\source\\repos\\kocmoc\\kocmoc\\kocmoc.csproj",
-        "projectName": "kocmoc",
+        "projectName": "dumbassOS",
         "projectPath": "C:\\Users\\waver\\source\\repos\\kocmoc\\kocmoc\\kocmoc.csproj",
         "packagesPath": "C:\\Users\\waver\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\waver\\source\\repos\\kocmoc\\kocmoc\\obj\\",
